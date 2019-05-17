@@ -8,8 +8,9 @@ date: 2019-05-04 21:50:03
 
 ***
 # 联系我
-- GitHub: [@javahiker](https://javahikers.github.io "javahiker的博客")
-- QQ: 675435543
+- GitHub: [@javahiker](https://github.com/javahikers "javahiker的博客")
+- 博客社区: [CSDN](https://blog.csdn.net/qq_19437295 "javahiker的CSDN")
+- 微信/QQ: 675435543
 - 个人邮箱: <675435543@qq.com>
 
 ***

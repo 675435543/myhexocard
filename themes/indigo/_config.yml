@@ -158,12 +158,13 @@ since_year: 2015
 
 # 用户页面中作者相关的描述性文字，如不需要设为 false
 #about: 用户页面中作者相关的描述性文字，如不需要设为 false
-about: false
+about: 商业转载或技术交流请走打赏留言或者邮件<a href="/about/#联系我">联系我</a>
 
 # “不蒜子”访问量统计，详见 http://ibruce.info/2015/04/04/busuanzi/
 visit_counter:
   site_uv: 站点总访客数：
   site_pv: 站点总访问量：
+  page_pv: 本文总阅读量：
 
 # 动态定义title
 #title_change:
