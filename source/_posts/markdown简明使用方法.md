@@ -127,34 +127,35 @@ __亚马逊会员为
 
 ***
 # 文字超链：Inline方式
-[javahiker]\(https://javahikers.github.io "javahiker的博客"\)
+`[javahiker](https://javahikers.github.io "javahiker的博客")`
 [javahiker](https://javahikers.github.io "javahiker的博客")
 
 ***
 # 图片超链
-![Github Javahiker]\(https://github.com/javahikers/javahikers.github.io/blob/master/img/brand.jpg "Github Javahiker"\)
-![Github Javahiker](https://github.com/javahikers/javahikers.github.io/blob/master/img/brand.jpg "Github Javahiker")
+`![Github Javahiker](http://javahikers.github.io/2019/05/04/markdown简明使用方法/javahiker.jpg "Javahiker")`
+![Github Javahiker](http://javahikers.github.io/2019/05/04/markdown简明使用方法/javahiker.jpg "Javahiker")
+在hexo中引入图片的其他方法，请进入我的博文=> [hexo博客引入图片](https://javahikers.github.io/2019/06/12/hexo博客引入图片/ "javahiker和你一起进步")
 
 ***
 # 索引超链接 Reference方式
 ## 1，2可以是任意字符
-\[javahiker\]\[1\]
-!\[Github Javahiker\]\[2\]
+`[javahiker][1]`
+`![Github Javahiker][2]`
 
-\[1\]:http://javahikers.github.io
-\[2\]:http://github.com/javahikers/javahikers.github.io/blob/master/img/brand.jpg
+`[1]:http://javahikers.github.io`
+`[2]:http://javahikers.github.io/2019/05/04/markdown简明使用方法/javahiker.jpg`
 ***
 [javahiker][1]
 ![Github Javahiker][2]
 
 [1]:http://javahikers.github.io
-[2]:http://github.com/javahikers/javahikers.github.io/blob/master/img/brand.jpg
+[2]:http://javahikers.github.io/2019/05/04/markdown简明使用方法/javahiker.jpg
 
 ***
 # 自动链接
 ## 尖括号
-*<*https://javahikers.github.io>
-*<*675435543@qq.com>
+`<https://javahikers.github.io>`
+`<675435543@qq.com>`
 ***
 <https://javahikers.github.io>
 <675435543@qq.com>
