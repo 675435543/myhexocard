@@ -9,7 +9,7 @@ tags: [Hexo,安装部署]
 
 ***
 # 步骤
-1. 将_config.yml里的psot_asset_folder设置为true
+1. 将_config.yml里的post_asset_folder设置为true
 `post_asset_folder: true`
 2. 在hexo目录下执行:
 `npm install hexo-asset-image --save`
