@@ -5,10 +5,6 @@ categories: 其他
 tags: [git,安装部署]
 ---
 
-{% meting "25707139" "netease" "song" "theme:#555" "mutex:true" "listmaxheight:340px" "preload:auto" %}
-
-***
-
 # 背景
 当有多个git账号时，比如：
 + 一个gitee，用于公司内部的工作开发；
