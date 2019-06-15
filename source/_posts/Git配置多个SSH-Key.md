@@ -69,7 +69,7 @@ tags: [git,安装部署]
 
     git clone https://github.com/javahikers/algorithms-studying.git
 
-2.路径以git@ 开头，下载代码时会进行权限校验。如果自己开发，推荐使用这种方式。
+2.路径以git@ 开头，下载代码时会进行权限校验。只有登录[github](https://github.com/ "github的网址")之后才能切换成git开头的路径。如果自己开发，推荐使用这种方式。
 将github.com替换成config文件中配置的Host。[代码地址](https://github.com/javahikers/algorithms-studying)
 
     git clone git@github.com.two:javahikers/algorithms-studying.git
