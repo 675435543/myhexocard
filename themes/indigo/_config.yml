@@ -98,8 +98,8 @@ baidu_tongji: 1c9123028e7e5abc8faae65d030b496e
 tajs: false
 
 # google
-google_analytics: false
-google_site_verification: false
+google_analytics: UA-142124449-1
+google_site_verification: HHaynQDbWoNBIm4JhtWmdzRe5CweKqUcxGjs3zqzRQU
 
 # sogou站长验证 http://zhanzhang.sogou.com/
 sogou_site_verification: false
