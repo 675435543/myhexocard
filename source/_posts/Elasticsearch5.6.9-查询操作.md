@@ -22,23 +22,27 @@ tags: [Elasticsearch]
 </div>
 
 ## 列出所有索引
-    curl 'localhost:9200/_cat/indices?v'
-[ElasticSearch 索引查询使用指南](https://www.cnblogs.com/pilihaotian/p/5830754.html)
+GET请求postman `http://localhost:9200/_cat/indices?v`
+GET请求kibana `GET /_cat/indices?v`,可以省略前面的ip和端口，默认连接本地9200端口,后面介绍都将通过kibana给es发送请求
 
     health status index            uuid                   pri rep docs.count docs.deleted store.size pri.store.size
     green  open   javahikers       OToEZOxvSbWJVtlEpGVOGg   5   1       1000            0      1.2mb        664.8kb
     green  open   logstashjsontest 7UZWLq26QTyDdVW2QczuyA   5   1         12            0    164.8kb         82.4kb
 
+[ElasticSearch 索引查询使用指南](https://www.cnblogs.com/pilihaotian/p/5830754.html)
+
 # 简单查询
-GET请求 `http://localhost:9200/javahikers/acount/400`
+GET请求 `GET javahikers/acount/400`
 
 # 条件查询
-POST请求 `http://localhost:9200/javahikers/_search`
+POST请求 `POST javahikers/_search`
 下面统一通过 REST request body发送查询参数
 
 ## match_all
 查询所有，from起始数据下标，数据下标是从0开始。size返回数据条数。
 不写from和size默认返回前10条数据
+
+    POST javahikers/_search
     {
         "query": {
             "match_all": {}
@@ -48,6 +52,7 @@ POST请求 `http://localhost:9200/javahikers/_search`
     }
 返回结果，根据字段名可以知道其含义
 took单位毫秒，hits返回的数据
+
     {
         "took": 8,
         "timed_out": false,
@@ -84,5 +89,70 @@ took单位毫秒，hits返回的数据
         }
     }
 
+## match
+带有sort时，查询结果里面_score字段会变成null
+
+    POST javahikers/_search
+    {
+      "query": {
+        "match": {
+          "address": "Avenue"
+        }
+      },
+      "sort": [
+        {
+          "age": {
+            "order": "desc"
+          }
+        }
+      ]
+    }
 
 # 聚合查询
+## aggs->terms
+    POST javahikers/_search
+    {
+      "aggs": {
+        "group_by_account_number": {
+          "terms": {
+            "field": "age"
+          }
+        },
+        "group_by_balance": {
+          "terms": {
+            "field": "balance"
+          }
+        }
+      }
+    }
+
+group_by_account_number的查询结果里面，可以看出默认获取排名前10的分组数数据，
+这些分组数据数量+doc_count_error_upper_bound+sum_other_doc_count等于全部文档数量
+
+    "doc_count_error_upper_bound": 0,
+    "sum_other_doc_count": 463,
+
+## aggs->stats
+    POST javahikers/_search
+    {
+      "aggs": {
+        "age_count": {
+          "stats": {
+            "field": "age"
+          }
+        }
+      }
+    }
+
+查询结果里面，包含了age的最小值，最大值，平均值和总和的计算
+
+      "aggregations": {
+        "age_count": {
+          "count": 1000,
+          "min": 20,
+          "max": 40,
+          "avg": 30.171,
+          "sum": 30171
+        }
+      }
+
