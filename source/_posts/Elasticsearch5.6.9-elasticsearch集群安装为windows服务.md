@@ -20,6 +20,10 @@ tags: [安装部署,Elasticsearch]
 <div>
 ![](Elasticsearch5.6.9-elasticsearch集群安装为windows服务/001.png)
 </div>
+如果遇到安装失败,可能是文件config/jvm.options 里面的参数设置过大导致，将下面的参数调小一点
+
+    -Xms1g
+    -Xmx1g
 
 # 命令
 + elasticsearch-service.bat install: 安装服务
