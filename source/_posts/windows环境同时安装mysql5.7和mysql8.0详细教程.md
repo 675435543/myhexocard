@@ -59,7 +59,7 @@ my.ini内容如下，文件保存为ANSI格式，否则后面会报错
     socket=E:/software_javahiker/mysql/mysql-5.7.26-winx64/data/mysql.sock
     log-error=E:/software_javahiker/mysql/mysql-5.7.26-winx64/data/mysql_error.log
     # 设置mysql服务端默认字符集
-    character-set-server=utf8
+    character-set-server=utf8mb4
     # 创建新表时将使用的默认存储引擎
     default-storage-engine=INNODB
     # 允许最大连接数
@@ -71,7 +71,7 @@ my.ini内容如下，文件保存为ANSI格式，否则后面会报错
     default_authentication_plugin=mysql_native_password
     [mysql]
     # 设置mysql客户端默认字符集
-    default-character-set=utf8
+    default-character-set=utf8mb4
 
 
 + 上述涉及到路径的配置，需要改成你自己解压之后的路径，可以看出有5个地方需要修改
