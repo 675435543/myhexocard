@@ -56,12 +56,12 @@ tags: [Mysql,安装部署]
     #设置3306端口
     port=3307
     # 设置mysql的安装目录
-    basedir =E:/software_javahiker/mysql/mysql-5.7.26-winx64
+    basedir =E:/software_javahiker/mysql/mysql-5.7.26-winx64-slave
     # 设置mysql数据库的数据的存放目录
-    datadir =E:/software_javahiker/mysql/mysql-5.7.26-winx64/data
-    tmpdir =E:/software_javahiker/mysql/mysql-5.7.26-winx64/data
-    socket=E:/software_javahiker/mysql/mysql-5.7.26-winx64/data/mysql.sock
-    log-error=E:/software_javahiker/mysql/mysql-5.7.26-winx64/data/mysql_error.log
+    datadir =E:/software_javahiker/mysql/mysql-5.7.26-winx64-slave/data
+    tmpdir =E:/software_javahiker/mysql/mysql-5.7.26-winx64-slave/data
+    socket=E:/software_javahiker/mysql/mysql-5.7.26-winx64-slave/data/mysql.sock
+    log-error=E:/software_javahiker/mysql/mysql-5.7.26-winx64-slave/data/mysql_error.log
     # 服务端使用的字符集默认为utf8mb4
     character-set-server=utf8mb4
     # 创建新表时将使用的默认存储引擎
@@ -84,4 +84,31 @@ tags: [Mysql,安装部署]
 # 安装    
 阅读 [教程](https://javahikers.github.io/2019/06/22/windows%E7%8E%AF%E5%A2%83%E5%90%8C%E6%97%B6%E5%AE%89%E8%A3%85mysql5.7%E5%92%8Cmysql8.0%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/) 进行安装，参照5.7版本进行安装。
 
+# 配置主库和从库
+1. 打开主库，查看主库信息
 
+
+    show master status
+    
+    File    Position    Binlog_Do_DB    Binlog_Ignore_DB    Executed_Gtid_Set
+    master-bin.000003   154 
+
+
+2. 打开从库, 根据主库信息配置从库信息后，重启服务
+
+
+    CHANGE MASTER TO
+    MASTER_HOST = 'localhost',
+    MASTER_USER = 'root',
+    MASTER_PASSWORD = '123456',
+    MASTER_LOG_FILE = 'master-bin.000003',
+    MASTER_LOG_POS = 154;
+
+
+3. 查看从库信息，保证slave_sql_running和Slave_IO_Running都是yes
+
+
+    show slave status
+
+
+有疑问请移步至[MySQL数据同步，出现Slave_SQL_Running：no和slave_io_running：no问题的解决方法](https://www.cnblogs.com/l-hh/p/9922548.html)
