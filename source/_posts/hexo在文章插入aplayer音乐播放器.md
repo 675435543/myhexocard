@@ -6,6 +6,10 @@ tags: [Hexo,安装部署]
 ---
 
 喜欢下面的歌吗，可以点我哦，下面会教大家怎么使用
+
+* 我喜欢的歌曲，不定期更新
+{% meting "2844118923" "netease" "playlist" "theme:#555" "mutex:true" "listmaxheight:150px" "preload:auto" %}
+
 * 我的个人歌单，不定期更新
 {% meting "2844542446" "netease" "playlist" "theme:#555" "mutex:true" "listmaxheight:150px" "preload:auto" %}
 
