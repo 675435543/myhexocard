@@ -79,7 +79,10 @@ theme: indigo
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com.two:javahikers/javahikers.github.io.git
+  repo: 
+    github: git@github.com.two:javahikers/javahikers.github.io.git
+    gitee: git@gitee.com.two:javahikers/javahikers.git
+#    coding: git@e.coding.net.two:javahikers/javahikers.coding.me.git
   branch: master
 
 # play function
