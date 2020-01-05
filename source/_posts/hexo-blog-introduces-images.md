@@ -20,10 +20,10 @@ _post目录下会生成一个名称为"博客名.md"的博客，同时也会生�
 `![提示信息](博客名/图片名.jpg)`
 提醒：这种方法只是单纯把图片显示出来，如果图片很大的话就会铺满屏幕或者超高，排版上不好看
 + 通过img标签控制宽高
-`<img src="hexo博客引入图片/Daniel.jpg" width="460px" height="690px" />`
+`<img src="hexo-blog-introduces-images/Daniel.jpg" width="460px" height="690px" />`
 + 通过 div 标签和 align 属性控制对齐方式
 `<div align="center">`
-`<img src="hexo博客引入图片/Daniel.jpg" width="460px" height="690px" />`
+`<img src="hexo-blog-introduces-images/Daniel.jpg" width="460px" height="690px" />`
 `</div>`
 
 5. hexo g部署之后，进入public\2019\06\12\博客名\index.html文件中查看
@@ -34,5 +34,5 @@ html标签内的语句是`<img src="2019/06/12/博客名/图片名.jpg">`
 ***
 来张Daniel的帅照~~~
 <div align="center">
-<img src="hexo博客引入图片/Daniel.jpg" width="460px" height="690px" alt="不好啦，图片不见啦~~" title="你是我的粉丝吗"/>
+<img src="hexo-blog-introduces-images/Daniel.jpg" width="460px" height="690px" alt="不好啦，图片不见啦~~" title="你是我的粉丝吗"/>
 </div>
