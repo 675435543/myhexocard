@@ -7,8 +7,8 @@ tags: [Elasticsearch,Logstash]
 
 # 环境准备
 1. Elasticsearch和Logstash版本：5.6.9
-2. Elasticsearch单机或集群,参考[《Elasticsearch5.6.9-elasticsearch集群安装为windows服务》](https://javahikers.github.io/2019/07/14/Elasticsearch5.6.9-elasticsearch%E9%9B%86%E7%BE%A4%E5%AE%89%E8%A3%85%E4%B8%BAwindows%E6%9C%8D%E5%8A%A1/)
-3. Logstash客户端，参考[《Elasticsearch5.6.9-windows下安装logstash》](https://javahikers.github.io/2019/07/14/Elasticsearch5.6.9-windows%E4%B8%8B%E5%AE%89%E8%A3%85logstash/)
+2. Elasticsearch单机或集群,参考[《Elasticsearch5.6.9-elasticsearch集群安装为windows服务》](https://javahikers.github.io/2019/07/14/elasticsearch-cluster-installed-for-windows-services/)
+3. Logstash客户端，参考[《Elasticsearch5.6.9-windows下安装logstash》](https://javahikers.github.io/2019/07/14/install-logstash-on-windows/)
 4. json格式的数据，去[json数据生成网站](https://www.json-generator.com)生成的json格式的数据。生成的数据不能直接使用，需要手动加工一下，我已经加工好了，可以点击[下载数据](/download/generated.rar)
 
         补充：第4点有个坑，json格式的数据末尾需要有回车换行符，否则只能读一条数据。
@@ -70,5 +70,5 @@ tags: [Elasticsearch,Logstash]
 
 运行脚本importGenerated.bat，即可导入数据
 <div>
-![](Elasticsearch5.6.9-logstash读取json格式文件数据导入到Elasticsearch/001.png)
+![](logstash-reads-json-formatted-file-data/001.png)
 </div>

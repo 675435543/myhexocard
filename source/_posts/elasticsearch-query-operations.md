@@ -9,7 +9,7 @@ tags: [Elasticsearch]
 ## logstash建索引
 + 去[json数据生成网站](https://www.json-generator.com)生成的json格式的数据
 生成的数据不能直接使用，需要手动加工一下，我已经加工好了，可以点击[下载数据](/download/generated.rar)
-+ 通过logstash导入json数据到Elasticsearch，参考我的博文[Elasticsearch5.6.9-logstash读取json格式文件数据导入到Elasticsearch](http://javahikers.github.io/2019/07/14/Elasticsearch5.6.9-logstash%E8%AF%BB%E5%8F%96json%E6%A0%BC%E5%BC%8F%E6%96%87%E4%BB%B6%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5%E5%88%B0Elasticsearch/)
++ 通过logstash导入json数据到Elasticsearch，参考我的博文[Elasticsearch5.6.9-logstash读取json格式文件数据导入到Elasticsearch](http://javahikers.github.io/2019/07/14/logstash-reads-json-formatted-file-data/)
 
 ## 使用_bulk api 建立索引
 + 去官网下载数据[accounts.json](https://raw.githubusercontent.com/elastic/elasticsearch/master/docs/src/test/resources/accounts.json)
@@ -18,7 +18,7 @@ tags: [Elasticsearch]
         curl -H 'Content-Type: application/json' -XPOST 'localhost:9200/javahikers/acount/_bulk?pretty&refresh' --data-binary '@accounts.json'
 + 或者postman工具建索引
 <div>
-![](Elasticsearch5.6.9-查询操作/001.png)
+![](elasticsearch-query-operations/001.png)
 </div>
 
 ## 列出所有索引

@@ -5,7 +5,7 @@ categories: 分布式
 tags: [安装部署,Elasticsearch]
 ---
 
-在安装elasticsearch集群之前，请先阅读这篇博文《Elasticsearch5.6.9-安装使用》的这一部分[elasticsearch分布式安装](https://javahikers.github.io/2019/07/10/Elasticsearch5.6.9-%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/#elasticsearch%E5%88%86%E5%B8%83%E5%BC%8F%E5%AE%89%E8%A3%85)
+在安装elasticsearch集群之前，请先阅读这篇博文《Elasticsearch5.6.9-安装使用》的这一部分[elasticsearch分布式安装](https://javahikers.github.io/2019/07/10/elasticsearch-install-and-use/#elasticsearch%E5%88%86%E5%B8%83%E5%BC%8F%E5%AE%89%E8%A3%85)
 本文在它的基础上进行安装，配置文件elasticsearch.yml保持一致。3个文件我已打包好，点击[下载文件](/download/elasticsearch yml文件.rar)
 
 # 进入各自的bin目录，安装并启动服务
@@ -18,7 +18,7 @@ tags: [安装部署,Elasticsearch]
 
 安装好之后可以在windows服务窗口查看已安装的服务
 <div>
-![](Elasticsearch5.6.9-elasticsearch集群安装为windows服务/001.png)
+![](elasticsearch-cluster-installed-for-windows-services/001.png)
 </div>
 如果遇到安装失败,可能是文件config/jvm.options 里面的参数设置过大导致，将下面的参数调小一点
 

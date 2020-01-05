@@ -141,7 +141,5 @@ tags: [Hexo,安装部署]
 # 关于歌曲id  播放列表id 如何获取
 登录[网易云音乐](https://music.163.com/ "点我进入网易云音乐官网")，搜索《一生所爱》，点击生成外链播放器。这时候会提示：由于版权保护，无法生成外链。不要着急，通过如下方式找到id
 <div>
-![](hexo在文章插入aplayer音乐播放器/01.png)
+![](hexo-inserts-the-aplayer-in-the-article/01.png)
 </div>
-
-

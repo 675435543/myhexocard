@@ -6,7 +6,7 @@ tags: [安装部署,Elasticsearch,Logstash]
 ---
 
 在安装logstash之前，请确认已安装好jdk1.8，并配置好环境变量。
-安装之前还需阅读[《Elasticsearch5.6.9-elasticsearch集群安装为windows服务》](https://javahikers.github.io/2019/07/14/Elasticsearch5.6.9-elasticsearch%E9%9B%86%E7%BE%A4%E5%AE%89%E8%A3%85%E4%B8%BAwindows%E6%9C%8D%E5%8A%A1/),并按照步骤安装好elasticsearch的服务。
+安装之前还需阅读[《Elasticsearch5.6.9-elasticsearch集群安装为windows服务》](https://javahikers.github.io/2019/07/14/elasticsearch-cluster-installed-for-windows-services/),并按照步骤安装好elasticsearch的服务。
 
 # 下载版本
 去官网下载[Logstash 5.6.9](https://www.elastic.co/cn/downloads/past-releases/logstash-5-6-9)
@@ -43,9 +43,9 @@ tags: [安装部署,Elasticsearch,Logstash]
 
 在弹出的界面Path选择run.bat,Details选项卡设置显示名，Dependencies选项卡设置依赖服务 elasticsearchMaster
 <div>
-![](Elasticsearch5.6.9-windows下安装logstash/001.png)
+![](install-logstash-on-windows/001.png)
 </div>
 最后点击install service 安装成功
 <div>
-![](Elasticsearch5.6.9-windows下安装logstash/002.png)
+![](install-logstash-on-windows/002.png)
 </div>

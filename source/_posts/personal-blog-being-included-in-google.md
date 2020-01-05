@@ -8,7 +8,7 @@ tags: [Hexo,使用教程]
 # 登录google账户
 进入 [Google Search Console](https://search.google.com/search-console/about "google的SearchConsole")，点击立即使用。
 <div>
-![](hexo个人博客收录谷歌的详细过程/001.png)
+![](personal-blog-being-included-in-google/001.png)
 </div>
 
 + 没有google账号，先注册一个google账号
@@ -18,7 +18,7 @@ tags: [Hexo,使用教程]
 # 验证网站所有权
 添加资源到 [Google Search Console](https://search.google.com/search-console/about "google的SearchConsole") 平台，资源类型选网址前缀，点继续
 <div>
-![](hexo个人博客收录谷歌的详细过程/002.png)
+![](personal-blog-being-included-in-google/002.png)
 </div>
 
 ***
@@ -39,7 +39,7 @@ hexo会将source目录下的文件googlexxxx.html打包到public目录。
 这个过程中googlexxxx.html的内容被hexo修改了，如果直接部署到我们的网站，google那边会验证不通过。而打包的过程中是不会修改source下的googlexxxx.html文件的，所以可以通过命令行将未被修改的文件googlexxxx.html拷贝过去。这样就能通过google的验证了。
 
 <div>
-![](hexo个人博客收录谷歌的详细过程/003.png)
+![](personal-blog-being-included-in-google/003.png)
 </div>
 看到这里，恭喜你通过了google的所以权验证了。
 
@@ -64,7 +64,7 @@ hexo会将source目录下的文件googlexxxx.html打包到public目录。
 content的内容在下面哦
 
 <div>
-![](hexo个人博客收录谷歌的详细过程/004.png)
+![](personal-blog-being-included-in-google/004.png)
 </div>
 ***
 
@@ -86,7 +86,7 @@ content的内容在下面哦
 
 当看到下面这张图时，说明你三种方式都通过验证了，是不是很喜庆的画面。其实用一种方式验证就够了。这样做的目的只是为了证明这个网站确实是你的。
 <div>
-![](hexo个人博客收录谷歌的详细过程/005.png)
+![](personal-blog-being-included-in-google/005.png)
 </div>
 ***
 
@@ -131,7 +131,7 @@ content的内容在下面哦
 
 robots.txt文件的内容要根据public下的目录结构填写。Allow表示允许google访问的页面，Disallow表示不允许google访问的页面。可参考我的目录结构和上面的对应关系，根据需要配置
 <div>
-![](hexo个人博客收录谷歌的详细过程/005_02.png)
+![](personal-blog-being-included-in-google/005_02.png)
 </div>
 ***
 
@@ -151,13 +151,13 @@ hexo g命令会在hexo的public目录自动生成站点地图文件sitemap.xml�
 前面部署成功之后，才能使用robots.txt测试工具。进入 [Google Search Console](https://search.google.com/search-console/about "google的SearchConsole") 平台，新版本的Search Console平台目前还没有看到robots.txt测试工具这一项，选择切换到旧版，才能找到这一配置项
 
 <div>
-![](hexo个人博客收录谷歌的详细过程/006.png)
+![](personal-blog-being-included-in-google/006.png)
 </div>
 ***
 
 选择 抓取->robots.txt测试工具，在这里可以测试网址是否遭到阻止
 <div>
-![](hexo个人博客收录谷歌的详细过程/007.png)
+![](personal-blog-being-included-in-google/007.png)
 </div>
 ***
 
@@ -165,13 +165,13 @@ hexo g命令会在hexo的public目录自动生成站点地图文件sitemap.xml�
 终于等到你了哦，提交站点地图到google，等待google收录吧
 
 <div>
-![](hexo个人博客收录谷歌的详细过程/008.png)
+![](personal-blog-being-included-in-google/008.png)
 </div>
 ***
 
 google收录非常的快哦，site:个人网址  即可验证是否被收录。写到这里已经被google收录啦。开心ing！！！你也来试试吧！
 
 <div>
-![](hexo个人博客收录谷歌的详细过程/009.png)
+![](personal-blog-being-included-in-google/009.png)
 </div>
 ***

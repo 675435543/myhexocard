@@ -50,7 +50,7 @@ tags: [git,安装部署]
 ## 配置公钥到git,分别对应3个不同的账户
 登录[github](https://github.com/ "github的网址")，配置公钥
 <div align="center">
-<img src="Git配置多个SSH-Key/01.png" alt="不好啦，图片不见啦~~" title="每天进步一点点"/>
+<img src="git-is-configured-with-multiple-ssh-keys/01.png" alt="不好啦，图片不见啦~~" title="每天进步一点点"/>
 </div>
 
 ***

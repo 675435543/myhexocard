@@ -13,18 +13,18 @@ API基本格式 http://ip:port/索引/类型/文档ID
 ## 非结构化创建
 通过Elasticsearch-head创建索引
 <div>
-![](Elasticsearch5.6.9-基本用法/001.png)
+![](elasticsearch-basic-usage/001.png)
 </div>
 也可以通过postman工具发送put请求，创建索引，127.0.0.1:9200/javahikers
 后面都将使用这种方式来操作
 <div>
-![](Elasticsearch5.6.9-基本用法/001_02.png)
+![](elasticsearch-basic-usage/001_02.png)
 </div>
 
 
 ## 结构化创建
 <div>
-![](Elasticsearch5.6.9-基本用法/002.png)
+![](elasticsearch-basic-usage/002.png)
 </div>
 
     通过postman发送put请求，127.0.0.1:9200/people
@@ -60,7 +60,7 @@ API基本格式 http://ip:port/索引/类型/文档ID
 # 插入文档
 ## 指定文档ID插入
 <div>
-![](Elasticsearch5.6.9-基本用法/003.png)
+![](elasticsearch-basic-usage/003.png)
 </div>
 
     通过postman发送put或post请求，127.0.0.1:9200/people/man/1
@@ -73,7 +73,7 @@ API基本格式 http://ip:port/索引/类型/文档ID
 
 ## 自动产生文档ID插入
 <div>
-![](Elasticsearch5.6.9-基本用法/004.png)
+![](elasticsearch-basic-usage/004.png)
 </div>
 
     通过postman发送post请求，127.0.0.1:9200/people/man。put请求无法自动产生文档ID。
@@ -86,7 +86,7 @@ API基本格式 http://ip:port/索引/类型/文档ID
 
 对比指定文档ID插入和自动产生文档ID插入的结果
 <div>
-![](Elasticsearch5.6.9-基本用法/005.png)
+![](elasticsearch-basic-usage/005.png)
 </div>
 
 # 修改文档

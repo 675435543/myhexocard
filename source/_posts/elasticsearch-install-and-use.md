@@ -48,7 +48,7 @@ kibana是一个配合Elasticsearch工作的分析和可视化平台，一些和 
 # elasticsearch分布式安装
 ## 拷贝两份相同的文件，作为两个备机使用
 <div>
-![](Elasticsearch5.6.9-安装使用/001.png)
+![](elasticsearch-install-and-use/001.png)
 </div>
 
 ---
@@ -85,10 +85,10 @@ slave2配置
 
 配置说明：cluster.name集群名称。node.name节点名称。node.master为true表示自己有机会成为主节点，不配置时默认为true。network.host绑定ip，如果不配置默认绑定127.0.0.1。http.port绑定端口,如果不配置默认绑定9200。discovery.zen.minimum_master_nodes防止脑裂配置项，表示至少需要几个节点才能组成集群。
 slave1和slave2指定的端口和默认端口不要冲突,启动bin目录下的脚本elasticsearch.bat，先启动master，再启动slave1和slave2，访问`http://localhost:9100/`
-每次手工启动上面3个es服务会显得很笨拙，可以将它们安装为windows服务，安装过程也很简单，请参考我的另一篇博文，[《Elasticsearch5.6.9-elasticsearch集群安装为windows服务》](https://javahikers.github.io/2019/07/14/Elasticsearch5.6.9-elasticsearch%E9%9B%86%E7%BE%A4%E5%AE%89%E8%A3%85%E4%B8%BAwindows%E6%9C%8D%E5%8A%A1/)
+每次手工启动上面3个es服务会显得很笨拙，可以将它们安装为windows服务，安装过程也很简单，请参考我的另一篇博文，[《Elasticsearch5.6.9-elasticsearch集群安装为windows服务》](https://javahikers.github.io/2019/07/14/elasticsearch-cluster-installed-for-windows-services/)
 
 <div>
-![](Elasticsearch5.6.9-安装使用/002.png)
+![](elasticsearch-install-and-use/002.png)
 </div>
 
 设想1：集群扩容非常的容易,可以再添加slave3,slave4...

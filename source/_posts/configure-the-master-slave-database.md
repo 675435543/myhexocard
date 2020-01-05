@@ -6,7 +6,7 @@ tags: [Mysql,安装部署]
 ---
 
 # 配置前需要阅读的文档
-请先阅读[《windows环境同时安装mysql5.7和mysql8.0详细教程》](https://javahikers.github.io/2019/06/22/windows%E7%8E%AF%E5%A2%83%E5%90%8C%E6%97%B6%E5%AE%89%E8%A3%85mysql5.7%E5%92%8Cmysql8.0%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/),后面将按照上述教程安装5.7版本的mysql。
+请先阅读[《windows环境同时安装mysql5.7和mysql8.0详细教程》](https://javahikers.github.io/2019/06/22/installs-both-mysql5.7-and-mysql8.0/),后面将按照上述教程安装5.7版本的mysql。
 
 # 准备安装文件和配置文件
 准备好两份解压之后的文件 mysql-5.7.26-winx64，一个当主库，一个当从库
@@ -82,7 +82,7 @@ tags: [Mysql,安装部署]
     default-character-set=utf8mb4
 
 # 安装    
-阅读 [教程](https://javahikers.github.io/2019/06/22/windows%E7%8E%AF%E5%A2%83%E5%90%8C%E6%97%B6%E5%AE%89%E8%A3%85mysql5.7%E5%92%8Cmysql8.0%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/) 进行安装，参照5.7版本进行安装。
+阅读 [教程](https://javahikers.github.io/2019/06/22/installs-both-mysql5.7-and-mysql8.0/) 进行安装，参照5.7版本进行安装。
 
 # 配置主库和从库
 1. 打开主库，查看主库信息

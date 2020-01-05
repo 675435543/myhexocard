@@ -9,17 +9,17 @@ tags: [Mysql,安装部署]
 ## 官网下载两个不同的版本
 进入[mysql官网](https://dev.mysql.com/downloads/mysql/)，页面导航 DOWNLOADS=>Mysql Community Server
 <div align="center">
-![](windows环境同时安装mysql5.7和mysql8.0详细教程/001.png)
+![](installs-both-mysql5.7-and-mysql8.0/001.png)
 </div>
 
 + 下载最新版本，目前是8.0.16，根据自己电脑配置选择64位或是32位
 <div align="center">
-![](windows环境同时安装mysql5.7和mysql8.0详细教程/002.png)
+![](installs-both-mysql5.7-and-mysql8.0/002.png)
 </div>
 
 + 下载5.7.26版本
 <div align="center">
-![](windows环境同时安装mysql5.7和mysql8.0详细教程/003.png)
+![](installs-both-mysql5.7-and-mysql8.0/003.png)
 </div>
 官网下载速度非常的快哦，大概只要1到2分钟的样子。
 
@@ -38,7 +38,7 @@ tags: [Mysql,安装部署]
 
 在根目录（mysql-5.7.26-winx64目录和mysql-8.0.16-winx64目录）下新建文件my.ini
 <div align="center">
-![](windows环境同时安装mysql5.7和mysql8.0详细教程/004.png)
+![](installs-both-mysql5.7-and-mysql8.0/004.png)
 </div>
 
 my.ini内容如下，文件保存为ANSI格式，否则后面会报错
@@ -187,13 +187,13 @@ taskkill命令将父进程端口为3752的程序杀死
 ### 数据库连接工具进行连接验证
 本人习惯用SQLyog, 进入[官网](https://sqlyog.en.softonic.com/) 下载
 <div align="center">
-![](windows环境同时安装mysql5.7和mysql8.0详细教程/006.png)
+![](installs-both-mysql5.7-and-mysql8.0/006.png)
 </div>
 端口改成3307，同样可以连接上
 
 最后来看看"服务"是不是都正常运行
 <div align="center">
-![](windows环境同时安装mysql5.7和mysql8.0详细教程/007.png)
+![](installs-both-mysql5.7-and-mysql8.0/007.png)
 </div>
 
 ***
@@ -208,7 +208,7 @@ data文件夹可能被其他进程占用导致删除不了。删除的正确姿�
 
 
 <div align="center">
-![](windows环境同时安装mysql5.7和mysql8.0详细教程/008.png)
+![](installs-both-mysql5.7-and-mysql8.0/008.png)
 </div>
 
 
