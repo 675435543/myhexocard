@@ -132,8 +132,8 @@ __亚马逊会员为
 
 ***
 # 图片超链
-`![Github Javahiker](http://javahikers.github.io/2019/05/04/markdown-simple-to-use/javahiker.jpg "Javahiker")`
-![Github Javahiker](http://javahikers.github.io/2019/05/04/markdown-simple-to-use/javahiker.jpg "Javahiker")
+`![Github Javahiker](https://javahikers.github.io/2019/05/04/markdown-simple-to-use/javahiker.jpg "Javahiker")`
+![Github Javahiker](https://javahikers.github.io/2019/05/04/markdown-simple-to-use/javahiker.jpg "Javahiker")
 在hexo中引入图片的其他方法，请进入我的博文=> [hexo博客引入图片](https://javahikers.github.io/2019/06/12/hexo-blog-introduces-images/ "javahiker和你一起进步")
 
 ***
@@ -142,14 +142,14 @@ __亚马逊会员为
 `[javahiker][1]`
 `![Github Javahiker][2]`
 
-`[1]:http://javahikers.github.io`
-`[2]:http://javahikers.github.io/2019/05/04/markdown-simple-to-use/javahiker.jpg`
+`[1]:https://javahikers.github.io`
+`[2]:https://javahikers.github.io/2019/05/04/markdown-simple-to-use/javahiker.jpg`
 ***
 [javahiker][1]
 ![Github Javahiker][2]
 
-[1]:http://javahikers.github.io
-[2]:http://javahikers.github.io/2019/05/04/markdown-simple-to-use/javahiker.jpg
+[1]:https://javahikers.github.io
+[2]:https://javahikers.github.io/2019/05/04/markdown-simple-to-use/javahiker.jpg
 
 ***
 # 自动链接

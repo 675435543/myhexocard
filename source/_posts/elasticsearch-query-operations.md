@@ -9,7 +9,7 @@ tags: [Elasticsearch]
 ## logstash建索引
 + 去[json数据生成网站](https://www.json-generator.com)生成的json格式的数据
 生成的数据不能直接使用，需要手动加工一下，我已经加工好了，可以点击[下载数据](/download/generated.rar)
-+ 通过logstash导入json数据到Elasticsearch，参考我的博文[Elasticsearch5.6.9-logstash读取json格式文件数据导入到Elasticsearch](http://javahikers.github.io/2019/07/14/logstash-reads-json-formatted-file-data/)
++ 通过logstash导入json数据到Elasticsearch，参考我的博文[Elasticsearch5.6.9-logstash读取json格式文件数据导入到Elasticsearch](https://javahikers.github.io/2019/07/14/logstash-reads-json-formatted-file-data/)
 
 ## 使用_bulk api 建立索引
 + 去官网下载数据[accounts.json](https://raw.githubusercontent.com/elastic/elasticsearch/master/docs/src/test/resources/accounts.json)
