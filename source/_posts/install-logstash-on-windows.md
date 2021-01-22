@@ -6,7 +6,7 @@ tags: [安装部署,Elasticsearch,Logstash]
 ---
 
 在安装logstash之前，请确认已安装好jdk1.8，并配置好环境变量。
-安装之前还需阅读[《Elasticsearch5.6.9-elasticsearch集群安装为windows服务》](https://javahikers.github.io/2019/07/14/elasticsearch-cluster-installed-for-windows-services/),并按照步骤安装好elasticsearch的服务。
+安装之前还需阅读[《Elasticsearch5.6.9-elasticsearch集群安装为windows服务》](https://javahikers.gitee.io/2019/07/14/elasticsearch-cluster-installed-for-windows-services/),并按照步骤安装好elasticsearch的服务。
 
 # 下载版本
 去官网下载[Logstash 5.6.9](https://www.elastic.co/cn/downloads/past-releases/logstash-5-6-9)

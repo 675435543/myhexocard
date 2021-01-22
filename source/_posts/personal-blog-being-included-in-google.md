@@ -126,8 +126,8 @@ content的内容在下面哦
     Disallow: /css/
     Disallow: /links/
      
-    Sitemap: http://javahikers.github.io/sitemap.xml
-    Sitemap: http://javahikers.github.io/baidusitemap.xml
+    Sitemap: http://javahikers.gitee.io/sitemap.xml
+    Sitemap: http://javahikers.gitee.io/baidusitemap.xml
 
 robots.txt文件的内容要根据public下的目录结构填写。Allow表示允许google访问的页面，Disallow表示不允许google访问的页面。可参考我的目录结构和上面的对应关系，根据需要配置
 <div>

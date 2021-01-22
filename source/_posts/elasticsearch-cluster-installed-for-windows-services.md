@@ -5,7 +5,7 @@ categories: 分布式
 tags: [安装部署,Elasticsearch]
 ---
 
-在安装elasticsearch集群之前，请先阅读这篇博文《Elasticsearch5.6.9-安装使用》的这一部分[elasticsearch分布式安装](https://javahikers.github.io/2019/07/10/elasticsearch-install-and-use/#elasticsearch%E5%88%86%E5%B8%83%E5%BC%8F%E5%AE%89%E8%A3%85)
+在安装elasticsearch集群之前，请先阅读这篇博文《Elasticsearch5.6.9-安装使用》的这一部分[elasticsearch分布式安装](https://javahikers.gitee.io/2019/07/10/elasticsearch-install-and-use/#elasticsearch%E5%88%86%E5%B8%83%E5%BC%8F%E5%AE%89%E8%A3%85)
 本文在它的基础上进行安装，配置文件elasticsearch.yml保持一致。3个文件我已打包好，点击[下载文件](/download/elasticsearch yml文件.rar)
 
 # 进入各自的bin目录，安装并启动服务
